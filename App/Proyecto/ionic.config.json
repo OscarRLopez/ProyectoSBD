@@ -1,0 +1,12 @@
+{
+  "name": "Proyecto",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {},
+  "proxies":[
+    {
+      "path": "/v1",
+      "proxyUrl": " http://127.0.0.1:5000"
+    }
+  ]
+}

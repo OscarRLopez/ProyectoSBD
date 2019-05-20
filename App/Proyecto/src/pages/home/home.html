@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Agenda 2019A
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="search()">
+        <ion-icon name = "search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let oferta of ofertas" (click)="info(oferta)">
+    <ion-card-header>
+        {{oferta.clave}} | {{oferta.materia}}
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        NRC: {{oferta.nrc}}
+      </p>
+      <p>
+        Profesor: {{oferta.profesor}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
